@@ -32,7 +32,7 @@
 .main-nav-container {
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: stretch;
   width: 100%;
   height: var(--header-height);
@@ -40,11 +40,12 @@
   z-index: 10;
   top: 0;
   left: 0;
-  background: var(--menu-bg);
+  background: linear-gradient(180deg, rgb(5, 15, 81) 0%, rgba(5, 15, 810,0) 100%);
 }
 /* this is img element that is the header logo */
 .header-logo {
   padding: 1rem;
+  width: 88px;
 }
 .header-logo-link {
   display: flex;
@@ -121,7 +122,7 @@
 }
 /* this makes sure the header doesn't cover any page content */
 main {
-  margin-top: var(--header-height);
+  /* margin-top: var(--header-height); */
 }
 
 /* this media query sets the point where the layout transitions from top bar to hamburger */

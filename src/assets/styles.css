@@ -11,12 +11,17 @@ body {
     outline: #FFDA4E dashed 4px;
 }
 
-header {
+.hero-img {
     background: linear-gradient(180deg, rgb(5, 15, 81) 0%, rgba(5, 15, 810,0) 100%), url('background.jpg');
     background-size: cover;
     background-position: center center;
-    /* min-height: 360px;*/
+    min-height: 360px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+
 
 main {
     display:flex;
@@ -59,6 +64,14 @@ nav a:hover, nav a:focus {
 
 .logo {
     width: 84px;
+}
+
+button.btn-toggle-menu svg {
+    fill: #55c4fa;
+}
+
+button.btn-toggle-menu span{
+    color: #55c4fa;
 }
 
 
@@ -122,9 +135,9 @@ iframe {
         flex-direction: row;
     }
 
-    header {
+    .hero-img {
         background-position: center 36%;
-       /* min-height: 474px; */
+       min-height: 474px; 
     }
     .red-bg {
         flex-grow: 1;
