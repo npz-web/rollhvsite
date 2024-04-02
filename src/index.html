@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 {% include 'head', title:'Roll HV' %}
-
 <body class="home">
   {% include 'header' %, title:'Roll HV' %}
   <div class="hero-img">
@@ -9,9 +8,9 @@
   </div>
   <main id="main-content">
     <section class="col">
-      <h2 class="blue-bg">Rinks</h2>
-      <h2 class="green-bg">Skateparks</h2>
-      <h2 class="yellow-bg">Trails</h2>
+      <a href="/rinks"><h2 class="blue-bg">Rinks</h2></a>
+      <a href="/skateparks"><h2 class="green-bg">Skateparks</h2></a>
+      <a href="/trails"><h2 class="yellow-bg">Trails</h2></a>
     </section>
     <section class="red-bg">
       <h2>Locations</h2>
@@ -24,4 +23,5 @@
   </main>
   {% include 'footer' %}
 </body>
+
 </html>
